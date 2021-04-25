@@ -307,6 +307,10 @@ $base-color: #5a5a5a;
 .works-img{
   width: 300px;
   height: auto;
+  &s{
+    width: 120px;
+  height: auto;
+  }
 }
 
 .about-img{
