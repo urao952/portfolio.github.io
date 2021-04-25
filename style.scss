@@ -1,6 +1,4 @@
 $base-color: #5a5a5a;
-// コンパイル後に消えるコメント
-/* コンパイル後も消えないコメント */
 @mixin basic-inner {
     width: 90%;
       max-width: 850px;
@@ -316,11 +314,6 @@ $base-color: #5a5a5a;
   height: auto;
 }
 
-// .responsive::before{
-//   background-image:url(images/arrow.png);
-// }
-
-
 .pagetop {
   display: none;
   -webkit-box-pack: center;
@@ -414,19 +407,7 @@ $base-color: #5a5a5a;
     }
   }
 
-
-
-  // .works-img img{
-  //   position:absolute;
-  //   top:-3px;
-  //   left:-3px;
-  // }
-  // .works-img:hover img{
-  //   transition:0.2s;
-  //   top:-1px;
-  //   left:-1px;
-  // }
-footer p{
+footer > p{
   color: #000;
   background-color: #fff;
   .dark-mode &{
