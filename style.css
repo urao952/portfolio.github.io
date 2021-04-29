@@ -507,4 +507,10 @@ footer li {
   width: 245px;
   margin: 25px;
 }
+
+@media screen and (max-width: 667px) {
+  .oProduct__t {
+    margin: 250px 25px 25px 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
