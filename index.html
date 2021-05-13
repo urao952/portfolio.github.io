@@ -212,7 +212,7 @@
                             </dl>
                         </a>
                     </div>
-                    <!-- <div id="images16" class="works works_shadow">
+                    <div id="images16" class="works works_shadow">
                         <a href="work16.html">
                             <div class="works-icon">
                                 <img class="works__img" src="images/workThum16.png" alt="">
@@ -221,7 +221,7 @@
                                 <dt class="works-title">名刺デザインA【個】</dt>
                             </dl>
                         </a>
-                    </div> -->
+                    </div>
                 </div>
             </section>
             <div class="pagetop">
@@ -308,7 +308,7 @@
         const IMAGES13 = document.getElementById("images13");
         const IMAGES14 = document.getElementById("images14");
         const IMAGES15 = document.getElementById("images15");
-        // const IMAGES16 = document.getElementById("images16");
+        const IMAGES16 = document.getElementById("images16");
 
         IMAGES1.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotPenguin";
@@ -355,9 +355,9 @@
         IMAGES15.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotSleep";
         });
-        // IMAGES16.addEventListener("mouseover", function () {
-        //     IMAGEDIV.className = "dotMeishi";
-        // });
+        IMAGES16.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotMeishi";
+        });
         const stalker = document.getElementById('stalker');
         document.addEventListener('mousemove', function (e) {
             stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
