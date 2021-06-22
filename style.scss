@@ -62,6 +62,16 @@ $base-color: #5a5a5a;
 
   .inner {
       @include basic-inner;
+      & > p{
+          .dark-mode &{
+            color: #fff;
+          }
+      }
+      & > h1{
+          .dark-mode &{
+            color: #fff;
+          }
+      }
 
       &__bg{
           background:url(images/bg_dot.png) repeat-y;
@@ -72,7 +82,7 @@ $base-color: #5a5a5a;
             background:url(images/bg_dotD.png) repeat-y;
             @media screen and (max-width: 667px) {
         background: rgba(150,150,150,0.4);
-      }
+        }
             .first &{
             height: 100vh;
           }
@@ -221,6 +231,7 @@ $base-color: #5a5a5a;
             }
       }
   }
+
   header{
     width:100%;
     padding:20px 0;
@@ -313,6 +324,12 @@ $base-color: #5a5a5a;
   }
 }
 
+.big-img{
+  // width: auto;
+  // height: 500px;
+  padding-top: 100px;
+}
+
 .about-img{
   width: 200px;
   height: auto;
@@ -385,6 +402,11 @@ $base-color: #5a5a5a;
     height: 100px;
   width: 164px;
   }
+}
+.sl-imgs{
+  width: auto;
+  height: 700px;
+  padding-top: 100px;
 }
 
 .img{

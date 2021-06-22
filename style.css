@@ -69,6 +69,14 @@ li {
   margin: 0 auto;
 }
 
+.dark-mode .inner > p {
+  color: #fff;
+}
+
+.dark-mode .inner > h1 {
+  color: #fff;
+}
+
 .inner__bg {
   background: url(images/bg_dot.png) repeat-y;
 }
@@ -368,6 +376,10 @@ h1 {
   height: auto;
 }
 
+.big-img {
+  padding-top: 100px;
+}
+
 .about-img {
   width: 200px;
   height: auto;
@@ -448,6 +460,12 @@ h1 {
 .works__img {
   height: 100px;
   width: 164px;
+}
+
+.sl-imgs {
+  width: auto;
+  height: 700px;
+  padding-top: 100px;
 }
 
 .img__light {
