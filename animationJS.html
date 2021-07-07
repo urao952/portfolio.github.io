@@ -1,0 +1,1911 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>key | AnimeJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+    <style>
+        body {
+            position: absolute;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #content {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background: rgb(22, 22, 22);
+        }
+
+        /* anime01
+    --------------------------------------------------------- */
+
+        .anime01 .obj {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-right: 25px solid transparent;
+            border-bottom: 43.3012px solid #ff7f7f;
+            border-left: 25px solid transparent;
+        }
+
+        .anime02 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background-color: #ffbf7f;
+        }
+
+        .anime03 .obj {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            background-image: url(http://placehold.jp/ffff7f/ffff7f/150x150.png);
+        }
+
+        .anime04 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            background-image: url(http://placehold.jp/7fff7f/7fff7f/150x150.png);
+        }
+
+        .anime05 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            background-image: url(http://placehold.jp/7fffff/7fffff/150x150.png);
+        }
+
+        .anime06 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            background-image: url(http://placehold.jp/bfff7f/bfff7f/150x150.png);
+        }
+
+        .anime07 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            background-image: url(http://placehold.jp/7f7fff/7f7fff/150x150.png);
+        }
+
+        .anime08 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            background-image: url(http://placehold.jp/bf7fff/bf7fff/150x150.png);
+
+        }
+
+        .anime09 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            background-image: url(http://placehold.jp/ff7fff/ff7fff/150x150.png);
+        }
+
+        .anime00 .obj {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background-image: url(http://placehold.jp/ff7fbf/ff7fbf/150x150.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+
+        <!-- anime01
+    ----------------------------------------------------------->
+        <div class="anime01">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+        </div>
+        <div class="anime02">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+            <div class="obj objPa04"></div>
+        </div>
+        <div class="anime03">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+            <div class="obj objPa04"></div>
+            <div class="obj objPa05"></div>
+            <div class="obj objPa06"></div>
+            <div class="obj objPa07"></div>
+            <div class="obj objPa08"></div>
+            <div class="obj objPa09"></div>
+            <div class="obj objPa10"></div>
+            <div class="obj objPa11"></div>
+            <div class="obj objPa12"></div>
+            <div class="obj objPa13"></div>
+            <div class="obj objPa14"></div>
+            <div class="obj objPa15"></div>
+        </div>
+        <div class="anime04">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+            <div class="obj objPa04"></div>
+            <div class="obj objPa05"></div>
+            <div class="obj objPa06"></div>
+            <div class="obj objPa07"></div>
+            <div class="obj objPa08"></div>
+            <div class="obj objPa09"></div>
+            <div class="obj objPa10"></div>
+            <div class="obj objPa11"></div>
+            <div class="obj objPa12"></div>
+        </div>
+        <div class="anime05">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj obj07"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+            <div class="obj objPa04"></div>
+            <div class="obj objPa05"></div>
+            <div class="obj objPa06"></div>
+            <div class="obj objPa07"></div>
+
+        </div>
+        <div class="anime06">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj obj07"></div>
+            <div class="obj obj08"></div>
+            <div class="obj objPa01"></div>
+            <div class="obj objPa02"></div>
+            <div class="obj objPa03"></div>
+            <div class="obj objPa04"></div>
+            <div class="obj objPa05"></div>
+            <div class="obj objPa06"></div>
+            <div class="obj objPa07"></div>
+            <div class="obj objPa08"></div>
+        </div>
+        <div class="anime07">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj obj07"></div>
+            <div class="obj obj08"></div>
+            <div class="obj obj09"></div>
+            <div class="obj obj01-2"></div>
+            <div class="obj obj02-2"></div>
+            <div class="obj obj03-2"></div>
+            <div class="obj obj04-2"></div>
+            <div class="obj obj05-2"></div>
+            <div class="obj obj06-2"></div>
+            <div class="obj obj07-2"></div>
+            <div class="obj obj08-2"></div>
+            <div class="obj obj09-2"></div>
+            <div class="obj obj01-3"></div>
+            <div class="obj obj02-3"></div>
+            <div class="obj obj03-3"></div>
+            <div class="obj obj04-3"></div>
+            <div class="obj obj05-3"></div>
+            <div class="obj obj06-3"></div>
+            <div class="obj obj07-3"></div>
+            <div class="obj obj08-3"></div>
+            <div class="obj obj09-3"></div>
+            <div class="obj obj01-4"></div>
+            <div class="obj obj02-4"></div>
+            <div class="obj obj03-4"></div>
+            <div class="obj obj04-4"></div>
+            <div class="obj obj05-4"></div>
+            <div class="obj obj06-4"></div>
+            <div class="obj obj07-4"></div>
+            <div class="obj obj08-4"></div>
+            <div class="obj obj09-4"></div>
+            <div class="obj obj01-5"></div>
+            <div class="obj obj02-5"></div>
+            <div class="obj obj03-5"></div>
+            <div class="obj obj04-5"></div>
+            <div class="obj obj05-5"></div>
+            <div class="obj obj06-5"></div>
+            <div class="obj obj07-5"></div>
+            <div class="obj obj08-5"></div>
+            <div class="obj obj09-5"></div>
+        </div>
+        <div class="anime08">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj obj07"></div>
+            <div class="obj obj08"></div>
+            <div class="obj obj09"></div>
+            <div class="obj obj10"></div>
+            <div class="obj obj01-2"></div>
+            <div class="obj obj01-3"></div>
+            <div class="obj obj01-4"></div>
+            <div class="obj obj02-2"></div>
+            <div class="obj obj02-3"></div>
+            <div class="obj obj02-4"></div>
+            <div class="obj obj03-2"></div>
+            <div class="obj obj03-3"></div>
+            <div class="obj obj03-4"></div>
+            <div class="obj obj04-2"></div>
+            <div class="obj obj04-3"></div>
+            <div class="obj obj04-4"></div>
+            <div class="obj obj05-2"></div>
+            <div class="obj obj05-3"></div>
+            <div class="obj obj05-4"></div>
+            <div class="obj obj06-2"></div>
+            <div class="obj obj06-3"></div>
+            <div class="obj obj06-4"></div>
+            <div class="obj obj07-2"></div>
+            <div class="obj obj07-3"></div>
+            <div class="obj obj07-4"></div>
+            <div class="obj obj08-2"></div>
+            <div class="obj obj08-3"></div>
+            <div class="obj obj08-4"></div>
+            <div class="obj obj09-2"></div>
+            <div class="obj obj09-3"></div>
+            <div class="obj obj09-4"></div>
+            <div class="obj obj10-2"></div>
+            <div class="obj obj10-3"></div>
+            <div class="obj obj10-4"></div>
+
+        </div>
+        <div class="anime09">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+        </div>
+        <div class="anime00">
+            <div class="obj obj01"></div>
+            <div class="obj obj02"></div>
+            <div class="obj obj03"></div>
+            <div class="obj obj04"></div>
+            <div class="obj obj05"></div>
+            <div class="obj obj06"></div>
+            <div class="obj obj07"></div>
+            <div class="obj obj08"></div>
+            <div class="obj obj09"></div>
+            <div class="obj obj10"></div>
+            <div class="obj obj11"></div>
+            <div class="obj obj12"></div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        /* anime01
+          --------------------------------------------------------- */
+        let anime011 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime011
+            .add({
+                targets: '.obj22',
+                opacity: [0, 1],
+                scale: [0, 10],
+                rotate: 300,
+                translateY: '+=40',
+            })
+            .add({
+                targets: '.obj23',
+                opacity: [0, 1],
+                scale: [0, 10],
+                rotate: 200,
+                translateY: '+=40',
+            })
+
+        let anime01 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime01
+            .add({
+                targets: '.anime01 .obj01',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 1080,
+                translateX: "+=20",
+                easing: 'easeOutElastic(1, .4)',
+            }, 0)
+            .add({
+                targets: '.anime01 .obj02',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 1080,
+                translateX: "-=30",
+                easing: 'easeOutElastic(1, .4)',
+            }, 0)
+            .add({
+                targets: '.anime01 .obj03',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 1080,
+                translateX: "-=5",
+                translateY: "-=43",
+                easing: 'easeOutElastic(1, .4)',
+            }, 0)
+            .add({
+                targets: '.anime01 .objPa01',
+                opacity: [0, 1],
+                scale: [0, 0.6],
+                rotate: 720,
+                translateX: "+=680",
+                translateY: "+=400",
+                easing: 'easeOutElastic(1, .8)',
+
+            }, 300)
+            .add({
+                targets: '.anime01 .objPa02',
+                opacity: [0, 1],
+                scale: [0, 0.6],
+                rotate: 720,
+                translateX: "-=680",
+                translateY: "+=400",
+                easing: 'easeOutElastic(1, .8)',
+            }, 300)
+            .add({
+                targets: '.anime01 .objPa03',
+                opacity: [0, 1],
+                scale: [0, 0.6],
+                rotate: 720,
+                translateX: "-=8",
+                translateY: "-=680",
+                easing: 'easeOutElastic(1, .8)',
+                endDelay: 300
+            }, 300)
+
+
+
+        let anime02 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime02
+            .add({
+                targets: '.anime02 .obj01',
+                opacity: [0, 1],
+                translateY: '-=90',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime02 .obj02',
+                opacity: [0, 1],
+                rotate: 90,
+                translateX: '+=2',
+                translateY: '-=80',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime02 .obj03',
+                opacity: [0, 1],
+                rotate: 180,
+                translateX: '-=0',
+                translateY: '-=80',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime02 .obj04',
+                opacity: [0, 1],
+                rotate: 270,
+                translateX: '-=4',
+                translateY: '-=85',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime02 .objPa01',
+                opacity: [0, 1],
+                scale: [0, 1],
+                translateX: [
+                    { value: 300, duration: 460, delay: 100, elasticity: 0 },
+                ],
+                translateY: [
+                    { value: 350, duration: 460, delay: 50, elasticity: 0 },
+                ],
+                duration: 400,
+                endDelay: -100,
+                rotate: 405,
+                easing: 'easeOutElastic(1, .8)',
+            }, 400)
+            .add({
+                targets: '.anime02 .objPa02',
+                opacity: [0, 1],
+                scale: [0, 1],
+                translateX: [
+                    { value: -300, duration: 460, delay: 100, elasticity: 0 },
+                ],
+                translateY: [
+                    { value: -350, duration: 460, delay: 50, elasticity: 0 },
+                ],
+                duration: 400,
+                endDelay: -100,
+                rotate: 405,
+                easing: 'easeOutElastic(1, .8)',
+            }, 500)
+            .add({
+                targets: '.anime02 .objPa03',
+                opacity: [0, 1],
+                scale: [0, 1],
+                translateY: [
+                    { value: 350, duration: 460, delay: 100, elasticity: 0 },
+                ],
+                translateX: [
+                    { value: -300, duration: 460, delay: 50, elasticity: 0 },
+                ],
+
+                duration: 400,
+                endDelay: -100,
+                rotate: 405,
+                easing: 'easeOutElastic(1, .8)',
+            }, 600)
+            .add({
+                targets: '.anime02 .objPa04',
+                opacity: [0, 1],
+                scale: [0, 1],
+                translateY: [
+                    { value: -350, duration: 460, delay: 100, elasticity: 0 },
+                ],
+                translateX: [
+                    { value: 300, duration: 460, delay: 50, elasticity: 0 },
+                ],
+                duration: 400,
+                endDelay: -100,
+                rotate: 405,
+                easing: 'easeOutElastic(1, .8)',
+            }, 700)
+
+        let anime03 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime03
+            .add({
+                targets: '.anime03 .obj01',
+                opacity: [0, 1],
+                translateY: '-=140',
+                easing: 'easeOutElastic(1, .1)',
+            }, 0)
+            .add({
+                targets: '.anime03 .obj02',
+                opacity: [0, 1],
+                rotate: 72,
+                translateX: '+=6',
+                translateY: '-=130',
+                easing: 'easeOutElastic(1, .1)',
+            }, 50)
+            .add({
+                targets: '.anime03 .obj03',
+                opacity: [0, 1],
+                rotate: 144,
+                translateY: '-=130',
+                easing: 'easeOutElastic(1, .1)',
+            }, 100)
+            .add({
+                targets: '.anime03 .obj04',
+                opacity: [0, 1],
+                rotate: 216,
+                translateX: '+=6',
+                translateY: '-=130',
+                easing: 'easeOutElastic(1, .1)',
+            }, 150)
+            .add({
+                targets: '.anime03 .obj05',
+                opacity: [0, 1],
+                rotate: 288,
+                translateY: '-=130',
+                easing: 'easeOutElastic(1, .1)',
+            }, 200)
+            .add({
+                targets: '.anime03 .objPa01',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                translateX: '+=6',
+                translateY: '-=280',
+            }, 300)
+            .add({
+                targets: '.anime03 .objPa06',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                translateX: '+=6',
+                translateY: '-=280',
+            }, 320)
+            .add({
+                targets: '.anime03 .objPa07',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                translateX: '+=6',
+                translateY: '-=280',
+            }, 340)
+            .add({
+                targets: '.anime03 .objPa02',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 72,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 350)
+            .add({
+                targets: '.anime03 .objPa08',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 72,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 370)
+            .add({
+                targets: '.anime03 .objPa09',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 72,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 390)
+            .add({
+                targets: '.anime03 .objPa03',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 144,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 400)
+            .add({
+                targets: '.anime03 .objPa10',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 144,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 420)
+            .add({
+                targets: '.anime03 .objPa11',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 144,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 440)
+            .add({
+                targets: '.anime03 .objPa04',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 216,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 450)
+            .add({
+                targets: '.anime03 .objPa12',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 216,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 470)
+            .add({
+                targets: '.anime03 .objPa13',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 216,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 490)
+            .add({
+                targets: '.anime03 .objPa05',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 288,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 500)
+            .add({
+                targets: '.anime03 .objPa14',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 288,
+                translateX: '+=6',
+                translateY: '-=250',
+            }, 520)
+            .add({
+                targets: '.anime03 .objPa15',
+                opacity: [0, 1],
+                scale: [0, 0.5],
+                rotate: 288,
+                translateX: '+=6',
+                translateY: '-=250',
+                endDelay: 100
+            }, 540)
+
+        let anime04 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime04
+            .add({
+                targets: '.anime04 .obj01',
+                opacity: [0, 1],
+                rotate: -30,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 0)
+            .add({
+                targets: '.anime04 .objPa01',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: -18,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime04 .objPa02',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: -10,
+                translateY: '-=440',
+                easing: 'easeOutElastic(1, .6)',
+            }, 0)
+            .add({
+                targets: '.anime04 .obj02',
+                opacity: [0, 1],
+                rotate: 30,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 50)
+            .add({
+                targets: '.anime04 .objPa03',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: 42,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 50)
+            .add({
+                targets: '.anime04 .objPa04',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 50,
+                translateY: '-=440',
+            }, 50)
+            .add({
+                targets: '.anime04 .obj03',
+                opacity: [0, 1],
+                rotate: 90,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime04 .objPa05',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: 102,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 100)
+            .add({
+                targets: '.anime04 .objPa06',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 110,
+                translateY: '-=440',
+                easing: 'easeOutElastic(1, .6)',
+            }, 100)
+            .add({
+                targets: '.anime04 .obj04',
+                opacity: [0, 1],
+                rotate: 150,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 150)
+            .add({
+                targets: '.anime04 .objPa07',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: 162,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 150)
+            .add({
+                targets: '.anime04 .objPa08',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 170,
+                translateY: '-=440',
+                easing: 'easeOutElastic(1, .6)',
+            }, 150)
+            .add({
+                targets: '.anime04 .obj05',
+                opacity: [0, 1],
+                rotate: 210,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 200)
+            .add({
+                targets: '.anime04 .objPa09',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: 222,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 200)
+            .add({
+                targets: '.anime04 .objPa10',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 230,
+                translateY: '-=440',
+                easing: 'easeOutElastic(1, .6)',
+            }, 200)
+            .add({
+                targets: '.anime04 .obj06',
+                opacity: [0, 1],
+                rotate: 270,
+                translateY: '-=170',
+                easing: 'easeOutElastic(1, .8)',
+            }, 250)
+            .add({
+                targets: '.anime04 .objPa11',
+                opacity: [0, 1],
+                scale: [0, 0.7],
+                rotate: 282,
+                translateY: '-=250',
+                easing: 'easeOutElastic(1, .7)',
+            }, 250)
+            .add({
+                targets: '.anime04 .objPa12',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 290,
+                translateY: '-=440',
+                easing: 'easeOutElastic(1, .6)',
+                endDelay: 300
+            }, 250)
+
+
+        let anime05 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime05
+            .add({
+                targets: '.anime05 .obj01',
+                opacity: [0, 1],
+                scale: [0, 1],
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj02',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 51.4,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj03',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 102.8,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj04',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 154.2,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj05',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 205.6,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj06',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 257,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .obj07',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 308.4,
+                translateY: '-=212',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa01',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa02',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 51.4,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa03',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 102.8,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa04',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 154.2,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa05',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 205.6,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa06',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 617,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+            }, 0)
+            .add({
+                targets: '.anime05 .objPa07',
+                opacity: [0, 1],
+                scale: [7, 0.6],
+                rotate: 668.4,
+                translateY: '-=632',
+                easing: 'easeOutElastic(1, .7)',
+                endDelay: 600
+            }, 0)
+
+        let anime06 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 700,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime06
+            .add({
+                targets: '.anime06 .obj01',
+                opacity: [0, 1],
+                rotate: -22.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj02',
+                opacity: [0, 1],
+                rotate: 22.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj03',
+                opacity: [0, 1],
+                rotate: 67.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj04',
+                opacity: [0, 1],
+                rotate: 112.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj05',
+                opacity: [0, 1],
+                rotate: 157.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj06',
+                opacity: [0, 1],
+                rotate: 202.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj07',
+                opacity: [0, 1],
+                rotate: 247.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .obj08',
+                opacity: [0, 1],
+                rotate: 292.5,
+                translateY: '-=250',
+            }, 0)
+            .add({
+                targets: '.anime06 .objPa01',
+                opacity: [0, 1],
+                rotate: -22.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa02',
+                opacity: [0, 1],
+                rotate: 22.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa03',
+                opacity: [0, 1],
+                rotate: 67.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa04',
+                opacity: [0, 1],
+                rotate: 112.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa05',
+                opacity: [0, 1],
+                rotate: 157.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa06',
+                opacity: [0, 1],
+                rotate: 202.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa07',
+                opacity: [0, 1],
+                rotate: 247.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+            }, 100)
+            .add({
+                targets: '.anime06 .objPa08',
+                opacity: [0, 1],
+                rotate: 292.5,
+                scale: [{ value: 0 }, { value: 1.5 }],
+                translateY: [{ value: -500 }, { value: -165 }, { value: -165 }],
+                easing: 'easeOutElastic(1, .8)',
+                endDelay: 300
+            }, 100)
+
+        let anime07 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime07
+            .add({
+                targets: '.anime07 .obj01',
+                opacity: [0, 0.2],
+                translateY: '-=292',
+            }, 0)
+            .add({
+                targets: '.anime07 .obj02',
+                opacity: [0, 0.2],
+                rotate: 40,
+                translateY: '-=292'
+            }, 0)
+            .add({
+                targets: '.anime07 .obj03',
+                opacity: [0, 0.2],
+                rotate: 80,
+                translateY: '-=292'
+            }, 0)
+            .add({
+                targets: '.anime07 .obj04',
+                opacity: [0, 0.2],
+                rotate: 120,
+                translateY: '-=292'
+            }, 0)
+            .add({
+                targets: '.anime07 .obj05',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 160,
+                translateY: '-=292'
+            }, 0)
+            .add({
+                targets: '.anime07 .obj06',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 200,
+                translateY: '-=292'
+            }, 0)
+            .add({
+                targets: '.anime07 .obj07',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 240,
+                translateY: '-=292',
+            }, 0)
+            .add({
+                targets: '.anime07 .obj08',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 280,
+                translateY: '-=292',
+            }, 0)
+            .add({
+                targets: '.anime07 .obj09',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 320,
+                translateY: '-=292',
+            }, 0)
+            .add({
+                targets: '.anime07 .obj01-2',
+                opacity: [0, 0.2],
+                translateY: '-=292',
+            }, 500)
+            .add({
+                targets: '.anime07 .obj02-2',
+                opacity: [0, 0.2],
+                rotate: 40,
+                translateY: '-=292'
+            }, 500)
+            .add({
+                targets: '.anime07 .obj03-2',
+                opacity: [0, 0.2],
+                rotate: 80,
+                translateY: '-=292'
+            }, 500)
+            .add({
+                targets: '.anime07 .obj04-2',
+                opacity: [0, 0.2],
+                rotate: 120,
+                translateY: '-=292'
+            }, 500)
+            .add({
+                targets: '.anime07 .obj05-2',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 160,
+                translateY: '-=292'
+            }, 500)
+            .add({
+                targets: '.anime07 .obj06-2',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 200,
+                translateY: '-=292'
+            }, 500)
+            .add({
+                targets: '.anime07 .obj07-2',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 240,
+                translateY: '-=292',
+            }, 500)
+            .add({
+                targets: '.anime07 .obj08-2',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 280,
+                translateY: '-=292',
+            }, 500)
+            .add({
+                targets: '.anime07 .obj09-2',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 320,
+                translateY: '-=292',
+            }, 500)
+            .add({
+                targets: '.anime07 .obj01-3',
+                opacity: [0, 0.2],
+                translateY: '-=292',
+            }, 600)
+            .add({
+                targets: '.anime07 .obj02-3',
+                opacity: [0, 0.2],
+                rotate: 40,
+                translateY: '-=292'
+            }, 600)
+            .add({
+                targets: '.anime07 .obj03-3',
+                opacity: [0, 0.2],
+                rotate: 80,
+                translateY: '-=292'
+            }, 600)
+            .add({
+                targets: '.anime07 .obj04-3',
+                opacity: [0, 0.2],
+                rotate: 120,
+                translateY: '-=292'
+            }, 600)
+            .add({
+                targets: '.anime07 .obj05-3',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 160,
+                translateY: '-=292'
+            }, 600)
+            .add({
+                targets: '.anime07 .obj06-3',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 200,
+                translateY: '-=292'
+            }, 600)
+            .add({
+                targets: '.anime07 .obj07-3',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 240,
+                translateY: '-=292',
+            }, 600)
+            .add({
+                targets: '.anime07 .obj08-3',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 280,
+                translateY: '-=292',
+            }, 600)
+            .add({
+                targets: '.anime07 .obj09-3',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 320,
+                translateY: '-=292',
+            }, 600)
+            .add({
+                targets: '.anime07 .obj01-4',
+                opacity: [0, 0.2],
+                translateY: '-=292',
+            }, 650)
+            .add({
+                targets: '.anime07 .obj02-4',
+                opacity: [0, 0.2],
+                rotate: 40,
+                translateY: '-=292'
+            }, 650)
+            .add({
+                targets: '.anime07 .obj03-4',
+                opacity: [0, 0.2],
+                rotate: 80,
+                translateY: '-=292'
+            }, 650)
+            .add({
+                targets: '.anime07 .obj04-4',
+                opacity: [0, 0.2],
+                rotate: 120,
+                translateY: '-=292'
+            }, 650)
+            .add({
+                targets: '.anime07 .obj05-4',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 160,
+                translateY: '-=292'
+            }, 650)
+            .add({
+                targets: '.anime07 .obj06-4',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 200,
+                translateY: '-=292'
+            }, 650)
+            .add({
+                targets: '.anime07 .obj07-4',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 240,
+                translateY: '-=292',
+            }, 650)
+            .add({
+                targets: '.anime07 .obj08-4',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 280,
+                translateY: '-=292',
+            }, 650)
+            .add({
+                targets: '.anime07 .obj09-4',
+                opacity: [0, 0.2],
+                scale: [0, 1],
+                rotate: 320,
+                translateY: '-=292',
+            }, 650)
+            .add({
+                targets: '.anime07 .obj01-5',
+                opacity: [0, 1],
+                translateY: '-=292',
+            }, 700)
+            .add({
+                targets: '.anime07 .obj02-5',
+                opacity: [0, 1],
+                rotate: 40,
+                translateY: '-=292'
+            }, 700)
+            .add({
+                targets: '.anime07 .obj03-5',
+                opacity: [0, 1],
+                rotate: 80,
+                translateY: '-=292'
+            }, 700)
+            .add({
+                targets: '.anime07 .obj04-5',
+                opacity: [0, 0.2],
+                rotate: 120,
+                translateY: '-=292'
+            }, 700)
+            .add({
+                targets: '.anime07 .obj05-5',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 160,
+                translateY: '-=292'
+            }, 700)
+            .add({
+                targets: '.anime07 .obj06-5',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 200,
+                translateY: '-=292'
+            }, 700)
+            .add({
+                targets: '.anime07 .obj07-5',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 240,
+                translateY: '-=292',
+            }, 700)
+            .add({
+                targets: '.anime07 .obj08-5',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 280,
+                translateY: '-=292',
+            }, 700)
+            .add({
+                targets: '.anime07 .obj09-5',
+                opacity: [0, 1],
+                scale: [0, 1],
+                rotate: 320,
+                translateY: '-=292',
+            }, 700)
+
+        let anime08 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime08
+            .add({
+                targets: '.anime08 .obj01',
+                opacity: [0, 1],
+                rotate: 0,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj01-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 9,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj01-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 18,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj01-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 27,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj02',
+                opacity: [0, 1],
+                rotate: 36,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj02-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 45,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj02-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 54,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj02-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 63,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj03',
+                opacity: [0, 1],
+                rotate: 72,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj03-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 81,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj03-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 90,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj03-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 99,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj04',
+                opacity: [0, 1],
+                rotate: 108,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj04-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 117,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj04-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 126,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj04-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 135,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj05',
+                opacity: [0, 1],
+                rotate: 144,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj05-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 153,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj05-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 162,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj05-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 171,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj06',
+                opacity: [0, 1],
+                rotate: 180,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj06-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 189,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj06-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 198,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj06-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 207,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj07',
+                opacity: [0, 1],
+                rotate: 216,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj07-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 225,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj07-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 234,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj07-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 243,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj08',
+                opacity: [0, 1],
+                rotate: 252,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj08-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 261,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj08-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 270,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj08-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 279,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj09',
+                opacity: [0, 1],
+                rotate: 288,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj09-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 297,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj09-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 307,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj09-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 316,
+                translateY: '-=1675',
+                duration: 5
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj10',
+                opacity: [0, 1],
+                rotate: 324,
+                translateY: [{ value: 0 }, { value: -335 }],
+                easing: 'easeOutElastic(1, .5)',
+            }, 100)
+            .add({
+                targets: '.anime08 .obj10-2',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 333,
+                translateY: '-=1675',
+                duration: 5,
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj10-3',
+                opacity: [0, 1],
+                scale: [0, 0.4],
+                rotate: 342,
+                translateY: '-=837.5',
+                duration: 25
+            }, '+=1')
+            .add({
+                targets: '.anime08 .obj10-4',
+                opacity: [0, 1],
+                scale: [0, 0.2],
+                rotate: 351,
+                translateY: '-=1675',
+                duration: 5,
+                endDelay: 200
+            }, '+=1')
+
+        let anime09 = anime.timeline({
+            easing: 'easeInOutExpo',
+            duration: 500,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime09
+            .add({
+                targets: '.anime09 .obj01',
+                opacity: [{ value: 0 }, { value: 0.5 }, { value: 1 }, { value: 0.5 }, { value: 1 }],
+                scale: [0, 8],
+                rotate: [{ value: 90, duration: 400, delay: 50 }, { value: 180, duration: 100, delay: 0 }, { value: 270, duration: 100, delay: 50 }, { value: 360, duration: 300, delay: 50, endDelay: 0 }],
+                translateX: '-=60',
+                translateY: '-=60',
+            }, 0)
+            .add({
+                targets: '.anime09 .obj02',
+                opacity: [{ value: 0 }, { value: 0.5 }, { value: 1 }, { value: 0.5 }, { value: 1 }],
+                scale: [0, 8],
+                rotate: [{ value: 90, duration: 400, delay: 50 }, { value: 180, duration: 100, delay: 0 }, { value: 270, duration: 100, delay: 50 }, { value: 360, duration: 300, delay: 50, endDelay: 0 }],
+                translateX: '-=60',
+                translateY: '+=60',
+            }, 0)
+            .add({
+                targets: '.anime09 .obj03',
+                opacity: [{ value: 0 }, { value: 0.5 }, { value: 1 }, { value: 0.5 }, { value: 1 }],
+
+                scale: [0, 8],
+                rotate: [{ value: 90, duration: 400, delay: 50 }, { value: 180, duration: 100, delay: 0 }, { value: 270, duration: 100, delay: 50 }, { value: 360, duration: 300, delay: 50, endDelay: 200 }],
+                translateX: '+=60',
+                translateY: '-=60',
+            }, 0)
+            .add({
+                targets: '.anime09 .obj04',
+                opacity: [{ value: 0 }, { value: 0.5 }, { value: 1 }, { value: 0.5 }, { value: 1 }],
+
+                scale: [0, 8],
+                rotate: [{ value: 90, duration: 400, delay: 50 }, { value: 180, duration: 100, delay: 0 }, { value: 270, duration: 100, delay: 50 }, { value: 360, duration: 300, delay: 50, endDelay: 0 }],
+                translateX: '+=60',
+                translateY: '+=60',
+            }, 0)
+
+        let anime00 = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 700,
+            direction: 'alternate',
+            autoplay: false
+        });
+
+        anime00
+            .add({
+                targets: '.anime00 .obj01',
+                opacity: [0, 1],
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj02',
+                opacity: [0, 1],
+                rotate: 30,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj03',
+                opacity: [0, 1],
+                rotate: 60,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj04',
+                opacity: [0, 1],
+                rotate: 90,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj05',
+                opacity: [0, 1],
+                rotate: 120,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj06',
+                opacity: [0, 1],
+                rotate: 150,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj07',
+                opacity: [0, 1],
+                rotate: 180,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj08',
+                opacity: [0, 1],
+                rotate: 210,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj09',
+                opacity: [0, 1],
+                rotate: 240,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj10',
+                opacity: [0, 1],
+                rotate: 270,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj11',
+                opacity: [0, 1],
+                rotate: 300,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+            }, 0)
+            .add({
+                targets: '.anime00 .obj12',
+                opacity: [0, 1],
+                rotate: 330,
+                translateX: [{ value: 0 }, { value: 0 }],
+                translateY: [{ value: -420 }, { value: 420 }, { value: -420 }, { value: 420 }],
+                endDelay: 400
+            }, 0)
+
+
+
+
+        /* keyup
+        --------------------------------------------------------- */
+        window.addEventListener('keyup', function (event) {
+            switch (event.keyCode) {
+                case 49: // 1
+                    anime01.restart();
+                    break;
+                case 50: // 2
+                    anime02.restart();
+                    break;
+
+                case 51: // 3
+                    anime03.restart();
+                    break;
+
+                case 52: // 4
+                    anime04.restart();
+                    break;
+
+                case 53: // 5
+                    anime05.restart();
+                    break;
+
+                case 54: // 6
+                    anime06.restart();
+                    break;
+
+                case 55: // 7
+                    anime07.restart();
+                    break;
+
+                case 56: // 8
+                    anime08.restart();
+                    break;
+
+                case 57: // 9
+                    anime09.restart();
+                    break;
+
+                case 48: // 0
+                    anime00.restart();
+                    break;
+
+                case 65: // A
+                    anime01.restart();
+                    anime02.restart();
+                    anime03.restart();
+                    anime04.restart();
+                    anime05.restart();
+                    anime06.restart();
+                    anime07.restart();
+                    anime08.restart();
+                    anime09.restart();
+                    anime00.restart();
+                    break;
+
+                default:
+            }
+        });
+        alert('1~0で各アニメ実行　Aで全アニメ実行');
+    </script>
+</body>
+
+</html>
