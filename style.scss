@@ -9,8 +9,8 @@ $base-color: #5a5a5a;
   }
   body {
     font-size: 1.4rem;
-    background-color: #fff;
-    color: #000;
+    background-color: #e0e0e0;
+    color: #1f1f1f;
   }
   .body{
     &__bg1{
@@ -64,12 +64,12 @@ $base-color: #5a5a5a;
       @include basic-inner;
       & > p{
           .dark-mode &{
-            color: #fff;
+            color: #e0e0e0;
           }
       }
       & > h1{
           .dark-mode &{
-            color: #fff;
+            color: #e0e0e0;
           }
       }
 
@@ -150,7 +150,7 @@ $base-color: #5a5a5a;
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     position: absolute;
 }
 
@@ -181,14 +181,14 @@ $base-color: #5a5a5a;
     & ul {
     padding: 70px 10px 0;
     & li {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #e0e0e0;
     list-style: none;
     & a {
     display: block;
     width: 100%;
     font-size: 20px;
     box-sizing: border-box;
-    color:#fff;
+    color:#e0e0e0;
     background-color: rgba(20,20,20,0.4);
     text-decoration: none;
     padding: 9px 15px 10px 10px;
@@ -198,8 +198,8 @@ $base-color: #5a5a5a;
     content: "";
     width: 7px;
     height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
+    border-top: solid 2px #e0e0e0;
+    border-right: solid 2px #e0e0e0;
     transform: rotate(45deg);
     position: absolute;
     right: 11px;
@@ -219,15 +219,15 @@ $base-color: #5a5a5a;
       background: rgba(256,256,256,0.4);
       margin-top:98px;
       .dark-mode &{
-              color: #fff;
+              color: #e0e0e0;
               background: rgba(0,0,0,0.4);
             }
       &Text{
         font-size: 3rem;
-        color: #000;
+        color: #1f1f1f;
         margin: 50px 40px;
         .dark-mode &{
-              color: #fff;
+              color: #e0e0e0;
             }
       }
       &Komejirushi{
@@ -238,13 +238,13 @@ $base-color: #5a5a5a;
   header{
     width:100%;
     padding:20px 0;
-    background-color:#fff;
+    background-color:#e0e0e0;
     border-bottom:1px solid #f7f7f7;
     position:fixed;
     top:0;
     z-index:100;
     .dark-mode &{
-              background-color: #000;
+              background-color: #1f1f1f;
               border-bottom: 1px solid #3a3a3a;
             }
   }
@@ -271,10 +271,10 @@ $base-color: #5a5a5a;
 .works{
   border-radius: 5px;
   background-color: #badcad;
-  color: #000;
+  color: #1f1f1f;
   .dark-mode &{
     background-color: #556b2f;
-     color: #fff;
+     color: #e0e0e0;
   }
 }
 
@@ -352,7 +352,7 @@ $base-color: #5a5a5a;
   width: 45px;
   height: 45px;
   border-radius: 70%;
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   font-weight: bold;
   cursor: pointer;
   transition: all 200ms 0s ease;
@@ -381,7 +381,7 @@ $base-color: #5a5a5a;
   width: 45px;
   height: 45px;
   border-radius: 70%;
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   font-weight: bold;
   cursor: pointer;
   transition: all 200ms 0s ease;
@@ -396,7 +396,7 @@ $base-color: #5a5a5a;
     z-index: 10;
   }
   .dark-mode &{
-    background-color: #000;
+    background-color: #1f1f1f;
     transition: 0.2s;
   }
 }
@@ -437,11 +437,11 @@ $base-color: #5a5a5a;
   }
 
 footer > p{
-  color: #000;
-  background-color: #fff;
+  color: #1f1f1f;
+  background-color: #e0e0e0;
   .dark-mode &{
-    background-color: #000;
-    color: #fff;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
   }
 }
   nav,
