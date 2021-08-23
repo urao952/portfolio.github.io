@@ -51,7 +51,7 @@
                     </p>
                     <p class=""><a href="https://bcrikko.github.io/css-collection/tool/dotgen/index.html"
                             target="_blank" rel=”noopener
-                            noreferrer”>作品ドットは「ドット打ち」と「CSS化」が同時にできるサイトを使用しています。</a><br>ちなみに背景の画像は<br>ホーム画面で「森」、<br>作品画面で「城」、<br>作品詳細画面で「図書館」です。
+                            noreferrer”>作品ドットは「ドット打ち」と「CSS化」が同時にできるサイトを使用しています。</a><br>ちなみに背景の画像は<br>ホーム画面で「森」、<br>作品群画面で「城」、<br>作品詳細画面で「図書館」です。
                     </p>
                     <p>下へどうぞ</p>
                     <div class="center">
@@ -68,6 +68,16 @@
 
                 <div class="speciality-list flex flex_justifyEvenly">
 
+                    <div id="images21" class="works works_shadow">
+                        <a href="work21.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb21.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">アプリデザインA【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
                     <div id="images11" class="works works_shadow">
                         <a href="work11.html">
                             <div class="works-icon">
@@ -85,6 +95,77 @@
                             </div>
                             <dl class="works-info">
                                 <dt class="works-title">サイトデザインB【共】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images17" class="works works_shadow">
+                        <a href="work17.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb17.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">グリッド・フライヤーA【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images18" class="works works_shadow">
+                        <a href="work18.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb18.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">幾何学形・CDジャケットA【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images19" class="works works_shadow">
+                        <a href="work19.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb19.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">パッケージデザインA【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images20" class="works works_shadow">
+                        <a href="work20.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb20.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">アニメーションJSA【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+
+                    <div id="images22" class="works works_shadow">
+                        <a href="work22.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb22.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">アニメーションJSB【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images23" class="works works_shadow">
+                        <a href="work23.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb23.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">アニメーションJSC【個】</dt>
+                            </dl>
+                        </a>
+                    </div>
+                    <div id="images24" class="works works_shadow">
+                        <a href="work24.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb24.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">グラデーションA【個】</dt>
                             </dl>
                         </a>
                     </div>
@@ -118,7 +199,6 @@
                             </dl>
                         </a>
                     </div>
-
                     <div id="images16" class="works works_shadow">
                         <a href="work16.html">
                             <div class="works-icon">
@@ -316,6 +396,14 @@
         const IMAGES14 = document.getElementById("images14");
         const IMAGES15 = document.getElementById("images15");
         const IMAGES16 = document.getElementById("images16");
+        const IMAGES17 = document.getElementById("images17");
+        const IMAGES18 = document.getElementById("images18");
+        const IMAGES19 = document.getElementById("images19");
+        const IMAGES20 = document.getElementById("images20");
+        const IMAGES21 = document.getElementById("images21");
+        const IMAGES22 = document.getElementById("images22");
+        const IMAGES23 = document.getElementById("images23");
+        const IMAGES24 = document.getElementById("images24");
 
         IMAGES1.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotPenguin";
@@ -364,6 +452,33 @@
         });
         IMAGES16.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotMeishi";
+        });
+        IMAGES17.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotFlyer";
+        });
+        IMAGES18.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotCD";
+        });
+        IMAGES18.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotCD";
+        });
+        IMAGES19.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotMon";
+        });
+        IMAGES20.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotAni2";
+        });
+        IMAGES21.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotApp"
+        });
+        IMAGES22.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotAni3";
+        });
+        IMAGES23.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotAni1";
+        });
+        IMAGES24.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotStati";
         });
         const stalker = document.getElementById('stalker');
         document.addEventListener('mousemove', function (e) {
