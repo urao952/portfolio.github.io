@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AnimeJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+    <style>
+        .loader {
+            display: flex;
+            position: absolute;
+            top: 298px;
+            left: 232px;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            margin: 0 2px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(56, 46, 46);
+            display: inline-block;
+        }
+
+        .box02 {
+            background-color: rgb(255, 211, 211);
+        }
+
+        .wind {
+            font-size: 64px;
+            position: absolute;
+            top: 580px;
+            left: 250px;
+            color: rgb(29, 243, 64);
+        }
+
+        .fo {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 60px;
+            border-bottom: 1px solid #000;
+            position: absolute;
+            top: 225px;
+            left: 345px;
+            animation: fadeIn 4s;
+        }
+
+        @keyframes fadeIn {
+            /*animetion-nameで設定した値を書く*/
+
+            0% {
+                opacity: 0;
+                color: #fff;
+            }
+
+            100% {
+                opacity: 1;
+                color: #000;
+            }
+
+        }
+
+        .none {
+            display: none;
+        }
+
+        .ti {
+            color: brown;
+            border-top: 1px solid brown;
+            border-bottom: 1px solid brown;
+            position: absolute;
+            top: 708px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box box01"></div>
+    <div class="box box02"></div>
+    <p class="wind">↑風↑↑風↑</p>
+    <div id="none1" class="loader none">
+        <div class="circle circle01"></div>
+        <div class="circle circle02"></div>
+        <div class="circle circle03"></div>
+    </div>
+    <p id="none2" class="none">終</p>
+    <p class="ti">地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地</p>
+    <script>
+        let box01 = anime({
+            targets: '.box01',
+            translateY: [
+                { value: '+=100', duration: 3000, easing: 'easeInQuad', endDelay: 2000 },
+                { value: '+=50', duration: 3000, easing: 'easeInQuad', endDelay: 2000 },
+                { value: '+=100', duration: 6000, easing: 'easeInQuad', endDelay: 100000 }
+            ],
+            translateX: [
+                { value: '+=120', duration: 3000, easing: 'linear', endDelay: 2000 },
+                { value: '+=30', duration: 3000, easing: 'linear', endDelay: 2000 },
+                { value: '+=60', duration: 6000, easing: 'linear' }
+            ],
+            rotate: [
+                { value: ['0', '70'], duration: 3000, easing: 'linear', endDelay: 2000 },
+                { value: ['70', '100'], duration: 3000, easing: 'linear', endDelay: 2000 },
+                { value: ['100', '150'], duration: 6000, easing: 'linear' }
+            ],
+        });
+        let box02 = anime({
+            targets: '.box02',
+            translateY: [
+                { value: '+=550', duration: 700, easing: 'easeInQuad' },
+                { value: '-=500', duration: 250, easing: 'easeOutQuad' },
+                { value: '+=100', duration: 300, easing: 'easeInQuad' },
+                { value: '-=50', duration: 300, easing: 'easeOutQuad' },
+                { value: '+=70', duration: 300, easing: 'easeInQuad' },
+                { value: '-=40', duration: 300, easing: 'easeOutQuad' },
+                { value: '+=485', duration: 500, easing: 'easeInQuad' }
+            ],
+            translateX: {
+                value: [100, 700],
+                duration: 2700,
+                easing: 'easeInQuad'
+            },
+            rotate: {
+                value: ['0', '1440'],
+                duration: 2550,
+                easing: 'linear'
+            },
+        });
+
+        let circle01 = anime({
+            targets: '.circle01',
+            keyframes: [
+                { scale: 1 },
+                { scale: 0.4 },
+                { scale: 1 }
+            ],
+            duration: 600,
+            endDelay: 200,
+            loop: true,
+            easing: 'easeOutCubic'
+        });
+
+        let circle02 = anime({
+            targets: '.circle02',
+            keyframes: [
+                { scale: 1 },
+                { scale: 0.4 },
+                { scale: 1 }
+            ],
+            duration: 600,
+            delay: 100,
+            endDelay: 100,
+            loop: true,
+            easing: 'easeOutCubic'
+        });
+
+        let circle03 = anime({
+            targets: '.circle03',
+            keyframes: [
+                { scale: 1 },
+                { scale: 0.4 },
+                { scale: 1 }
+            ],
+            duration: 600,
+            delay: 200,
+            loop: true,
+            easing: 'easeOutCubic'
+        });
+
+        let loader = anime({
+            targets: '.loader',
+
+        })
+
+        const none1 = document.getElementById("none1");
+        const none2 = document.getElementById("none2");
+        function Generate1() {
+            none1.classList.toggle("none");
+        }
+        function Generate2() {
+            none2.classList.toggle("none");
+            none2.classList.toggle("fo");
+        }
+
+        window.setTimeout(Generate1, 20000);
+        window.setTimeout(Generate2, 24000);
+    </script>
+</body>
+
+</html>

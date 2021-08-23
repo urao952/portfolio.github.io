@@ -1,0 +1,1268 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AnimeJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .string {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Oswald', monospace;
+        }
+
+        .char {
+            display: inline-block;
+        }
+
+        .trident {
+            font-size: 1200px;
+        }
+
+        .w,
+        .e,
+        .b,
+        .d,
+        .e2,
+        .s,
+        .i,
+        .g,
+        .n {
+            font-size: 30px;
+            opacity: 0;
+            display: inline-block;
+        }
+
+        .char {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-set">
+        <span class="w w1">w</span>
+        <span class="w w2">w</span>
+        <span class="w w3">w</span>
+        <span class="w w4">w</span>
+        <span class="w w5">w</span>
+        <span class="w w6">w</span>
+        <span class="w w7">w</span>
+        <span class="w w8">w</span>
+    </div>
+    <div class="e-set">
+        <span class="e e1">e</span>
+        <span class="e e2 e2222">e</span>
+        <span class="e e3">e</span>
+        <span class="e e4">e</span>
+        <span class="e e5">e</span>
+        <span class="e e6">e</span>
+        <span class="e e7">e</span>
+        <span class="e e8">e</span>
+        <span class="e e9">e</span>
+    </div>
+
+
+    <div scanlass="b-set">
+        <span class="b b1">b</span>
+        <span class="b b2">b</span>
+        <span class="b b3">b</span>
+        <span class="b b4">b</span>
+        <span class="b b5">b</span>
+        <span class="b b6">b</span>
+        <span class="b b7">b</span>
+        <span class="b b8">b</span>
+    </div>
+
+    <div class="d-set">
+        <span class="d d1">d</span>
+        <span class="d d2">d</span>
+        <span class="d d3">d</span>
+        <span class="d d4">d</span>
+        <span class="d d5">d</span>
+        <span class="d d6">d</span>
+        <span class="d d7">d</span>
+    </div>
+
+    <div class="e2-set">
+        <span class="e2 e21">e</span>
+        <span class="e2 e22">e</span>
+        <span class="e2 e23">e</span>
+        <span class="e2 e24">e</span>
+        <span class="e2 e25">e</span>
+        <span class="e2 e26">e</span>
+        <span class="e2 e27">e</span>
+        <span class="e2 e28">e</span>
+        <span class="e2 e29">e</span>
+
+    </div>
+    <div class="s-set">
+        <span class="s s1">s</span>
+        <span class="s s2">s</span>
+        <span class="s s3">s</span>
+        <span class="s s4">s</span>
+        <span class="s s5">s</span>
+        <span class="s s6">s</span>
+        <span class="s s7">s</span>
+
+    </div>
+
+    <div class="i-set">
+        <span class="i i1">i</span>
+        <span class="i i2">i</span>
+        <span class="i i3">i</span>
+        <span class="i i4">i</span>
+        <span class="i i5">i</span>
+    </div>
+    <div class="g-set">
+        <span class="g g1">g</span>
+        <span class="g g2">g</span>
+        <span class="g g3">g</span>
+        <span class="g g4">g</span>
+        <span class="g g5">g</span>
+        <span class="g g6">g</span>
+        <span class="g g7">g</span>
+    </div>
+
+    <div class="n-set">
+        <span class="n n1">n</span>
+        <span class="n n2">n</span>
+        <span class="n n3">n</span>
+        <span class="n n4">n</span>
+        <span class="n n5">n</span>
+        <span class="n n6">n</span>
+        <span class="n n7">n</span>
+        <span class="n n8">n</span>
+        <span class="n n9">n</span>
+        <span class="n n10">n</span>
+        <span class="n n11">n</span>
+    </div>
+
+    <div class="chars">
+        <span class="char char1">W</span>
+        <span class="char char2">E</span>
+        <span class="char char3">B</span>
+        <span class="char char4">D</span>
+        <span class="char char5">E</span>
+        <span class="char char6">S</span>
+        <span class="char char7">I</span>
+        <span class="char char8">G</span>
+        <span class="char char9">N</span>
+    </div>
+    <p class="trident">Ψ</p>
+
+    <script>
+
+        let tl = anime.timeline({
+            targets: '.char',
+            easing: 'easeOutExpo',
+            duration: 500
+        });
+
+        tl
+            .add({
+                targets: '.w1',
+                fontSize: 30,
+                translateX: 100,
+                translateY: 500,
+                opacity: 1,
+                duration: 300,
+                easing: 'easeOutBounce',
+                endDelay: 150
+            })
+            .add({
+                targets: '.w2',
+                fontSize: 30,
+                translateX: 108,
+                translateY: 500,
+                opacity: 1,
+                duration: 500,
+                easing: 'easeOutBounce',
+            })
+            .add({
+                targets: '.e1',
+                fontSize: 30,
+                translateX: 200,
+                translateY: 460,
+                opacity: 0,
+                duration: 100,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.e1',
+                duration: 50,
+                opacity: 1,
+            })
+            .add({
+                targets: '.e2',
+                fontSize: 30,
+                translateX: 195,
+                translateY: 460,
+                opacity: 0,
+                duration: 100,
+                easing: 'easeOutBounce',
+            })
+            .add({
+                targets: '.e2222',
+                duration: 50,
+                opacity: 1,
+                endDelay: 100
+            })
+            .add({
+                targets: '.e3',
+                fontSize: 30,
+                translateX: 190,
+                translateY: 460,
+                opacity: 0,
+                duration: 100,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.e3',
+                duration: 50,
+                opacity: 1,
+                endDelay: 600
+            })
+            .add({
+                targets: '.b1',
+                fontSize: 30,
+                translateX: 300,
+                translateY: 416,
+                opacity: 1,
+                duration: 10,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.b2',
+                fontSize: 30,
+                translateX: 300,
+                translateY: 416,
+                opacity: 1,
+                duration: 10,
+                rotate: 50,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.d1',
+                fontSize: 30,
+                translateX: 400,
+                translateY: 372,
+                opacity: 1,
+                duration: 10,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.d2',
+                fontSize: 30,
+                translateX: 400,
+                translateY: 372,
+                opacity: 1,
+                duration: 10,
+                rotate: 40,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.e21',
+                fontSize: 30,
+                translateX: 500,
+                translateY: 325,
+                opacity: 1,
+                duration: 9,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.e22',
+                fontSize: 30,
+                translateX: 495,
+                translateY: 325,
+                opacity: 1,
+                duration: 9,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.e23',
+                fontSize: 30,
+                translateX: 490,
+                translateY: 325,
+                opacity: 1,
+                duration: 9,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.s1',
+                fontSize: 30,
+                translateX: 620,
+                translateY: 285,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.i1',
+                fontSize: 30,
+                translateX: 690,
+                translateY: 240,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.g1',
+                fontSize: 30,
+                translateX: 765,
+                translateY: 195,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.n1',
+                fontSize: 30,
+                translateX: 833,
+                translateY: 146,
+                opacity: 1,
+                duration: 7,
+                easing: 'easeOutBounce',
+                endDelay: 1
+            })
+            .add({
+                targets: '.n2',
+                fontSize: 30,
+                translateX: 843,
+                translateY: 146,
+                opacity: 1,
+                duration: 7,
+                easing: 'easeOutBounce',
+                endDelay: 200
+            })
+
+
+
+
+            .add({
+                targets: '.w3',
+                fontSize: 30,
+                translateX: 52,
+                translateY: 480,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.w4',
+                fontSize: 30,
+                translateX: 50,
+                translateY: 480,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.w5',
+                fontSize: 30,
+                translateX: 46,
+                translateY: 480,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.w6',
+                fontSize: 30,
+                translateX: -17,
+                translateY: 460,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.w7',
+                fontSize: 30,
+                translateX: -16,
+                translateY: 460,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.w8',
+                fontSize: 30,
+                translateX: -16,
+                translateY: 460,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+
+
+
+            .add({
+                targets: '.e4',
+                fontSize: 30,
+                translateX: 146,
+                translateY: 445,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e5',
+                fontSize: 30,
+                translateX: 128,
+                translateY: 430,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e6',
+                fontSize: 30,
+                translateX: 124,
+                translateY: 438,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e7',
+                fontSize: 30,
+                translateX: 92,
+                translateY: 416,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e8',
+                fontSize: 30,
+                translateX: 88,
+                translateY: 416,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e9',
+                fontSize: 30,
+                translateX: 83,
+                translateY: 416,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+
+
+            .add({
+                targets: '.b3',
+                fontSize: 30,
+                translateX: 262,
+                translateY: 396,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b4',
+                fontSize: 30,
+                translateX: 270,
+                translateY: 400,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b5',
+                fontSize: 30,
+                translateX: 238,
+                translateY: 396,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b6',
+                fontSize: 30,
+                translateX: 206,
+                translateY: 380,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b7',
+                fontSize: 30,
+                translateX: 212,
+                translateY: 380,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b8',
+                fontSize: 30,
+                translateX: 180,
+                translateY: 375,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+
+            .add({
+                targets: '.d3',
+                fontSize: 30,
+                translateX: 362,
+                translateY: 352,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.d4',
+                fontSize: 30,
+                translateX: 372,
+                translateY: 352,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.d5',
+                fontSize: 30,
+                translateX: 324,
+                translateY: 332,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.d6',
+                fontSize: 30,
+                translateX: 334,
+                translateY: 332,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.d7',
+                fontSize: 30,
+                translateX: 304,
+                translateY: 328,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+
+
+            .add({
+                targets: '.e24',
+                fontSize: 30,
+                translateX: 447,
+                translateY: 308,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e25',
+                fontSize: 30,
+                translateX: 444,
+                translateY: 300,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e26',
+                fontSize: 30,
+                translateX: 412,
+                translateY: 292,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e27',
+                fontSize: 30,
+                translateX: 394,
+                translateY: 279,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e28',
+                fontSize: 30,
+                translateX: 389,
+                translateY: 279,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e29',
+                fontSize: 30,
+                translateX: 384,
+                translateY: 279,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+
+            .add({
+                targets: '.e210',
+                fontSize: 90,
+                translateX: 496,
+                translateY: 210,
+                opacity: 0.2,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+
+            .add({
+                targets: '.s2',
+                fontSize: 30,
+                translateX: 580,
+                translateY: 275,
+                opacity: 1,
+                duration: 8,
+                rotate: -40,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s3',
+                fontSize: 30,
+                translateX: 595,
+                translateY: 270,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s4',
+                fontSize: 30,
+                translateX: 563,
+                translateY: 260,
+                opacity: 1,
+                duration: 8,
+                rotate: -40,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s5',
+                fontSize: 30,
+                translateX: 538,
+                translateY: 245,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s6',
+                fontSize: 30,
+                translateX: 538,
+                translateY: 237,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s7',
+                fontSize: 30,
+                translateX: 527,
+                translateY: 245,
+                opacity: 1,
+                duration: 8,
+                rotate: -45,
+                easing: 'easeOutSine'
+            })
+
+
+            .add({
+                targets: '.i2',
+                fontSize: 30,
+                translateX: 675,
+                translateY: 228,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.i3',
+                fontSize: 30,
+                translateX: 662,
+                translateY: 218,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.i4',
+                fontSize: 30,
+                translateX: 651,
+                translateY: 200,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.i5',
+                fontSize: 30,
+                translateX: 643,
+                translateY: 190,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+
+
+            .add({
+                targets: '.g2',
+                fontSize: 30,
+                translateX: 725,
+                translateY: 170,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g3',
+                fontSize: 30,
+                translateX: 735,
+                translateY: 176,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g4',
+                fontSize: 30,
+                translateX: 720,
+                translateY: 169,
+                opacity: 1,
+                duration: 8,
+                rotate: 90,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g5',
+                fontSize: 30,
+                translateX: 670,
+                translateY: 151,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g6',
+                fontSize: 30,
+                translateX: 670,
+                translateY: 142,
+                opacity: 1,
+                duration: 8,
+                rotate: 70,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g7',
+                fontSize: 30,
+                translateX: 666,
+                translateY: 157,
+                opacity: 1,
+                duration: 8,
+                rotate: 140,
+                easing: 'easeOutSine'
+            })
+
+
+            .add({
+                targets: '.n3',
+                fontSize: 30,
+                translateX: 796,
+                translateY: 130,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n4',
+                fontSize: 30,
+                translateX: 805,
+                translateY: 130,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n5',
+                fontSize: 30,
+                translateX: 758,
+                translateY: 113,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n6',
+                fontSize: 30,
+                translateX: 750,
+                translateY: 116,
+                opacity: 1,
+                duration: 8,
+                rotate: -35,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n7',
+                fontSize: 30,
+                translateX: 739,
+                translateY: 128,
+                opacity: 1,
+                duration: 8,
+                rotate: -35,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n8',
+                fontSize: 30,
+                translateX: 702,
+                translateY: 96,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n9',
+                fontSize: 30,
+                translateX: 683,
+                translateY: 102,
+                opacity: 1,
+                duration: 8,
+                rotate: -35,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n10',
+                fontSize: 30,
+                translateX: 692,
+                translateY: 115,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n11',
+                fontSize: 30,
+                translateX: 673,
+                translateY: 99,
+                opacity: 1,
+                duration: 8,
+                easing: 'easeOutSine',
+            })
+            .add({
+                targets: 'body',
+                backgroundColor: '#2f4f4f',
+                duration: 1,
+            })
+            .add({
+                targets: '.trident',
+                fontSize: 1500,
+                translateX: 0,
+                translateY: 1000,
+                opacity: 0,
+                duration: -6000,
+                easing: 'easeOutSine',
+            })
+            .add({
+                targets: '.trident',
+                fontSize: 1200,
+                translateX: 0,
+                translateY: 3000,
+                opacity: 0.1,
+                duration: 1,
+                easing: 'easeOutSine',
+            })
+            .add({
+                targets: '.trident',
+                fontSize: 1500,
+                translateX: 0,
+                translateY: -2100,
+                opacity: 0.6,
+                duration: 800,
+                easing: 'easeOutBack',
+            })
+            .add({
+                targets: '.w-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            //なんでか知らないけどb-setだけ判定されなかったのでここだけ個別に消してます。
+            .add({
+                targets: '.b1',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b2',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b3',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b4',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b5',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b6',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b7',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.b8',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.d-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.e2-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.s-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.i-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.g-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.n-set',
+                fontSize: 0,
+                translateX: 0,
+                translateY: 0,
+                opacity: 0,
+                duration: 10,
+                easing: 'easeOutSine'
+            })
+
+            .add({
+                targets: '.char1',
+                fontSize: 80,
+                translateX: 90,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char2',
+                fontSize: 80,
+                translateX: 130,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char3',
+                fontSize: 80,
+                translateX: 185,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char3',
+                fontSize: 80,
+                translateX: 185,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char4',
+                fontSize: 80,
+                translateX: 240,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char5',
+                fontSize: 80,
+                translateX: 290,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char6',
+                fontSize: 80,
+                translateX: 350,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char7',
+                fontSize: 80,
+                translateX: 390,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char8',
+                fontSize: 80,
+                translateX: 430,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char9',
+                fontSize: 80,
+                translateX: 460,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.trident',
+                fontSize: 1500,
+                translateX: 0,
+                translateY: -8000,
+                opacity: 1,
+                duration: 400,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char',
+                color: "#fff",
+                targets: '.chars',
+                backgroundColor: "#191970",
+                delay: anime.stagger(100)
+            })
+            .add({
+                targets: '.char1',
+                fontSize: 80,
+                translateX: 90,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char2',
+                fontSize: 80,
+                translateX: 96,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char3',
+                fontSize: 80,
+                translateX: 102,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char4',
+                fontSize: 80,
+                translateX: 106,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char5',
+                fontSize: 80,
+                translateX: 111,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char6',
+                fontSize: 80,
+                translateX: 118,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char7',
+                fontSize: 80,
+                translateX: 124,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char8',
+                fontSize: 80,
+                translateX: 128,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.char9',
+                fontSize: 80,
+                translateX: 132,
+                translateY: 0,
+                opacity: 1,
+                duration: 1,
+                easing: 'easeOutSine'
+            })
+            .add({
+                targets: '.chars',
+                scale: 1.5,
+                translateX: "10%",
+                translateY: "0vh",
+            });
+
+    </script>
+
+</body>
+
+</html>

@@ -44,6 +44,10 @@ $base-color: #5a5a5a;
     vertical-align: middle;
   }
 
+  .po-img{
+    margin: 100px 0 0 0;
+  }
+
   .title{
     width: 140px;
     height: auto;
@@ -111,6 +115,9 @@ $base-color: #5a5a5a;
   }
   .workmargin{
     margin: 0 50px;
+  }
+  .workmarginH1{
+    margin: 0 35%;
   }
 
   #menu-btn-check {
@@ -436,7 +443,7 @@ $base-color: #5a5a5a;
     }
   }
 
-footer > p{
+footer p{
   color: #1f1f1f;
   background-color: #e0e0e0;
   .dark-mode &{
@@ -465,8 +472,8 @@ footer li{
 
         @media screen and (max-width: 667px) {
           &__t{
-margin: 250px 25px 25px 25px;
-    }
+                margin: 250px 25px 25px 25px;
+              }
       }
 
   }

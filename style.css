@@ -45,6 +45,10 @@ img {
   vertical-align: middle;
 }
 
+.po-img {
+  margin: 100px 0 0 0;
+}
+
 .title {
   width: 140px;
   height: auto;
@@ -126,6 +130,10 @@ li {
 
 .workmargin {
   margin: 0 50px;
+}
+
+.workmarginH1 {
+  margin: 0 35%;
 }
 
 #menu-btn-check {
@@ -499,12 +507,12 @@ h1 {
   transition: 0.2s;
 }
 
-footer > p {
+footer p {
   color: #1f1f1f;
   background-color: #e0e0e0;
 }
 
-.dark-mode footer > p {
+.dark-mode footer p {
   background-color: #1f1f1f;
   color: #e0e0e0;
 }
