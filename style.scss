@@ -44,10 +44,6 @@ $base-color: #5a5a5a;
     vertical-align: middle;
   }
 
-  .po-img{
-    margin: 100px 0 0 0;
-  }
-
   .title{
     width: 140px;
     height: auto;
@@ -220,6 +216,9 @@ $base-color: #5a5a5a;
     left: 0;/*メニューを画面内へ*/
     transition: 0.3s;
 }
+}
+.top98{
+      margin-top:98px;
 }
   .first{
       height: 100vh;
