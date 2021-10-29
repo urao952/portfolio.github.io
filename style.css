@@ -129,7 +129,11 @@ li {
 }
 
 .workmarginH1 {
-  margin: 0 35%;
+  margin: 0 10%;
+}
+
+.textafter {
+  margin-bottom: 100px;
 }
 
 #menu-btn-check {
@@ -292,10 +296,6 @@ header {
 .dark-mode header {
   background-color: #1f1f1f;
   border-bottom: 1px solid #3a3a3a;
-}
-
-h1 {
-  float: left;
 }
 
 /* works */
@@ -477,6 +477,10 @@ h1 {
 .sl-imgs {
   width: auto;
   height: 700px;
+  padding-top: 100px;
+}
+
+.padding-top {
   padding-top: 100px;
 }
 
