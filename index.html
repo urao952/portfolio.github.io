@@ -64,6 +64,16 @@
 
 
                 <div class="speciality-list flex flex_justifyEvenly">
+                    <div id="images26" class="works works_shadow">
+                        <a href="work26.html">
+                            <div class="works-icon">
+                                <img class="works__img" src="images/workThumb26.png" alt="">
+                            </div>
+                            <dl class="works-info">
+                                <dt class="works-title">化粧品サイトA【共】</dt>
+                            </dl>
+                        </a>
+                    </div>
                     <div id="images25" class="works works_shadow">
                         <a href="work25.html">
                             <div class="works-icon">
@@ -341,6 +351,7 @@
         const IMAGES23 = document.getElementById("images23");
         const IMAGES24 = document.getElementById("images24");
         const IMAGES25 = document.getElementById("images25");
+        const IMAGES26 = document.getElementById("images26");
 
         IMAGES1.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotPenguin";
@@ -398,6 +409,9 @@
         });
         IMAGES25.addEventListener("mouseover", function () {
             IMAGEDIV.className = "dotFujita";
+        });
+        IMAGES26.addEventListener("mouseover", function () {
+            IMAGEDIV.className = "dotTopic";
         });
         const stalker = document.getElementById('stalker');
         document.addEventListener('mousemove', function (e) {
